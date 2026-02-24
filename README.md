@@ -1,1 +1,1 @@
-# seckeyjp.github.io
+[いろあて！](/iroate.md)
