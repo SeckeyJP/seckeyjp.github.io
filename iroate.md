@@ -10,4 +10,4 @@
   詳細は Google のプライバシーポリシーをご確認ください。
   https://policies.google.com/privacy
 
-  お問い合わせ：[あなたのメールアドレス]
+  お問い合わせ：system.sekita@gmail.com
