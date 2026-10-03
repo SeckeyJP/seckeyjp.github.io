@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI Kitchen プライバシーポリシー</title>
+<style>
+  body { font-family: -apple-system, BlinkMacSystemFont, 'Hiragino Sans', sans-serif; max-width: 800px; margin: 0 auto; padding: 20px; line-height: 1.8; color: #333; }
+  h1 { font-size: 1.5em; border-bottom: 2px solid #4F7A52; padding-bottom: 8px; }
+  h2 { font-size: 1.2em; margin-top: 2em; color: #4F7A52; }
+  ul { padding-left: 1.5em; }
+  .updated { color: #666; font-size: 0.9em; }
+</style>
+</head>
+<body>
+
+<h1>AI Kitchen プライバシーポリシー</h1>
+<p class="updated">最終更新日: 2026年10月3日</p>
+
+<p>本プライバシーポリシー（以下「本ポリシー」）は、AI Kitchen（以下「本アプリ」）におけるユーザー情報の取り扱いについて定めるものです。本アプリをご利用いただくことで、本ポリシーに同意したものとみなします。</p>
+
+<h2>1. 運営者情報</h2>
+<p>本アプリは個人開発者により運営されています。</p>
+
+<h2>2. 収集する情報</h2>
+<p>本アプリは以下の情報を収集します。</p>
+<ul>
+  <li><strong>認証情報:</strong> メールアドレスとパスワード（Amazon Cognito により管理）。ユーザー認証およびアカウント管理のために使用します。</li>
+  <li><strong>世帯の情報:</strong> 世帯名、表示名、人数、家族の招待コード。</li>
+  <li><strong>アプリ利用データ:</strong> 食材の在庫と賞味期限、調味料の有無、献立の好み・メモ、作った献立の履歴と評価、献立表と買い物リスト、献立を作る回数の残高。</li>
+  <li><strong>購入に関する情報:</strong> App Store から提供されるトランザクション識別子、製品、購入日、有効期限、環境（Sandbox／Production）。クレジットカード番号などの決済情報は Apple が管理し、本アプリは受け取りません。</li>
+  <li><strong>通知用トークン:</strong> 賞味期限の通知を有効にした場合のみ、端末のプッシュ通知トークン。</li>
+</ul>
+<p>以下の情報は収集しません。</p>
+<ul>
+  <li>氏名、住所、電話番号</li>
+  <li>決済カード情報</li>
+  <li>位置情報</li>
+  <li>端末内の写真、連絡先等の個人データ</li>
+</ul>
+
+<h2>3. 情報の利用目的</h2>
+<ul>
+  <li>ユーザー認証とアカウント管理</li>
+  <li>献立・献立表・買い物リストの生成と表示</li>
+  <li>賞味期限の通知</li>
+  <li>購入内容に応じた回数の付与、返金時の取り消し、購入の照合</li>
+  <li>サービスの改善と品質向上</li>
+</ul>
+
+<h2>4. AI への送信について</h2>
+<p>献立を生成する際、世帯の在庫・調味料・人数・好みの設定・入力したメモ・直近の献立の履歴を、Amazon Web Services の生成 AI サービス（Amazon Bedrock 上の Anthropic Claude）に送信します。送信される内容にメールアドレスや氏名などの識別情報は含まれません。Amazon Bedrock はこれらの入力をモデルの学習に使用しないと定めています。推論は日本国外のリージョンで処理されることがあります。</p>
+
+<h2>5. 第三者への情報提供</h2>
+<p>ユーザーの個人情報を第三者に販売、貸与、交換することはありません。ただし、以下の場合を除きます。</p>
+<ul>
+  <li>法令に基づく開示要請があった場合</li>
+  <li>ユーザーの事前の同意がある場合</li>
+  <li>ユーザーの生命、身体、財産の保護のために必要がある場合</li>
+</ul>
+
+<h2>6. 第三者サービスの利用</h2>
+<p>本アプリは以下の第三者サービスを利用しています。各サービスのプライバシーポリシーも合わせてご確認ください。</p>
+<ul>
+  <li><strong>Amazon Web Services (AWS):</strong> 認証（Amazon Cognito）、データの保管・処理、AI による生成（Amazon Bedrock）に使用。<a href="https://aws.amazon.com/privacy/">AWS プライバシーポリシー</a></li>
+  <li><strong>Apple App Store:</strong> アプリ内課金の決済と、購入・更新・返金の通知に使用。<a href="https://www.apple.com/legal/privacy/">Apple プライバシーポリシー</a></li>
+  <li><strong>Apple Push Notification service:</strong> 賞味期限の通知の配信に使用。</li>
+</ul>
+<p>本アプリは広告を表示せず、広告識別子（IDFA）やトラッキングを利用しません。</p>
+
+<h2>7. データの保管</h2>
+<p>ユーザーデータは AWS の東京リージョン（ap-northeast-1）のサーバーに保管されます。適切な暗号化およびアクセス制御により、データを保護しています。AI による生成の処理のみ、日本国外のリージョンで行われることがあります。</p>
+
+<h2>8. データの保持期間</h2>
+<ul>
+  <li>世帯のデータ（在庫、調味料、好み、献立、献立表、回数）: 世帯の最後のメンバーがアカウントを削除するまで保持</li>
+  <li>生成ジョブの記録: 作成から24時間後に自動削除</li>
+  <li>購入の記録（トランザクション識別子等）: 返金処理と法令上の義務のため、アカウント削除後も保持</li>
+  <li>購入通知の記録: 受信から180日後に自動削除</li>
+  <li>回数の増減の履歴: 400日後に自動削除</li>
+</ul>
+
+<h2>9. ユーザーの権利</h2>
+<ul>
+  <li><strong>データの削除:</strong> アプリ内の「設定」→「アカウントを削除」から削除できます。世帯の最後のメンバーの場合、世帯のデータもすべて削除されます。他にメンバーがいる場合、世帯のデータは残り、ご自身のアカウントと所属だけが削除されます。</li>
+  <li><strong>月額プランの解約:</strong> iPhone の「設定」→ Apple ID →「サブスクリプション」から行えます。アカウントを削除しても自動では解約されません。</li>
+  <li><strong>通知の停止:</strong> アプリ内の「設定」または iOS の通知設定からいつでも停止できます。</li>
+</ul>
+
+<h2>10. 児童のプライバシー</h2>
+<p>本アプリは13歳未満の児童を対象としていません。13歳未満の児童から意図的に個人情報を収集することはありません。</p>
+
+<h2>11. プライバシーポリシーの変更</h2>
+<p>本ポリシーは予告なく変更される場合があります。重要な変更がある場合は、アプリ内で通知します。変更後のポリシーは本ページに掲載した時点で効力を生じます。</p>
+
+<h2>12. お問い合わせ</h2>
+<p>プライバシーに関するお問い合わせは、以下のメールアドレスまでご連絡ください。</p>
+<p>Email: system.sekita@gmail.com</p>
+<p><a href="terms.html">利用規約</a> ／ <a href="support.html">サポート</a></p>
+
+</body>
+</html>
